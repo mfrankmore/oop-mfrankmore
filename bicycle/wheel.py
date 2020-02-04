@@ -21,7 +21,7 @@ class Wheel:
         if value < 0:
             raise ValueError(f"pressure {value} must be non-negative")
         if value >= self.BURST_PRESSURE:
-            self._burst = True
+            self._burst = Truesss
         if self._burst:
             value = 0.0
         self._pressure = value

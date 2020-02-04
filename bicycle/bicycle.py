@@ -1,4 +1,4 @@
-from typing import Sequence
+from typing import Sequence,Set,List,Tuple,Dict
 from wheel import Wheel
 
 class Bicycle:

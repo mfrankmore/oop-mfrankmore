@@ -3,7 +3,7 @@ import unittest
 from wheel import Wheel
 
 
-class WheelTest(unittest.TestCase):
+class WheelTest(unittest.TestCase): #Inheritence - WheelTest is a TestCase
 
     def testDefaults(self):
         wheel = Wheel()
