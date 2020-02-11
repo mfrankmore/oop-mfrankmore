@@ -16,7 +16,27 @@ class Student:
     def grade(self) -> int:
         return self._grade
 
+    @grade.setter
+    def grade(self, value : int) -> None:
+        if abs(value) > 100:
+            raise ValueError(f"Grade change must be -100 to 100")
+        elif value < 0:
+            if self.grade - abs(value) < 0:
+                raise ValueError(f"Grade must be great than 0")
+            else:
+                self.grade -= value
+        elif value > 0:
+            if self.grade + value > 100:
+                raise ValueError(f"Grade must be less than 100")
+            else:
+                self.grade += value
+        
 
+
+
+        
+
+             
 
 
     @property
