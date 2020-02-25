@@ -16,7 +16,7 @@ class Student{
     std::string getName(){
         return _name;
     }
-
+    
     int getGrade() {
         return _grade;
     }
