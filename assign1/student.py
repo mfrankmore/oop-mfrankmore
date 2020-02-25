@@ -30,14 +30,6 @@ class Student:
                 raise ValueError(f"Grade must be less than 100")
             else:
                 self.grade += value
-        
-
-
-
-        
-
-             
-
 
     @property
     def fail(self) -> bool:
