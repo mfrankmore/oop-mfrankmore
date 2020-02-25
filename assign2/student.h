@@ -9,9 +9,21 @@ class Student{
     
     std::string _name;
     int _grade;
+    bool _failing;
 
     public:
+
+    std::string getName(){
+        return _name;
+    }
+
+    int getGrade() {
+        return _grade;
+    }
     
+    bool fail() {
+        return _failing;
+    }
 
     Student(std::string name, int grade) {
         _name = name;
