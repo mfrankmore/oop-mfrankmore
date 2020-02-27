@@ -3,6 +3,8 @@
 
 using namespace std;
 
+void testConst();
+
 int main() {
     //Test Calls
     testConst();
