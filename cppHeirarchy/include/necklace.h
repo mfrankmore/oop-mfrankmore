@@ -1,8 +1,9 @@
 #pragma once
 
+#include <string>
 #include "jewelry.h"
 
-#include <string.h>
+
 
 namespace bling {
 
