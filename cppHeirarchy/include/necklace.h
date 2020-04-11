@@ -13,8 +13,8 @@ namespace bling {
 
         public: string getGem();
         public: string getMetal();
-        public: void setGem();
-        public: void setMetal();
+        public: void setGem(string gem);
+        public: void setMetal(string metal);
     };
 
 

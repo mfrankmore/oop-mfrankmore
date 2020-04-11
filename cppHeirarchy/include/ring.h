@@ -14,9 +14,9 @@ namespace bling {
         public: string getGem();
         public: string getMetal();
         public: int getSize();
-        public: void setGem();
-        public: void setMetal();
-        public: void setSize();
+        public: void setGem(string metal);
+        public: void setMetal(string metal);
+        public: void setSize(int value);
 
     };
 
