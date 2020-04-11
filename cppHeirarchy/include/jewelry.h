@@ -1,7 +1,7 @@
 #pragma once
 
 
-namespace go {
+namespace bling {
 
     class Jewelry {
         private: bool polished;
