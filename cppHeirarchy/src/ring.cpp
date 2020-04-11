@@ -4,7 +4,7 @@ namespace bling {
 
     const string Necklace::DEFAULT_METAL = "gold";
     const string Necklace::DEFAULT_GEM = "none";
-    const int Necklace::DEFAULT_SIZE = "6"
+    const int Necklace::DEFAULT_SIZE = 6
 
     string Jewelry::getGem() {
         return gem;
