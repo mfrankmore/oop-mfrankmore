@@ -96,6 +96,8 @@ void Weekday::handle1() {
     cout << "Weekday handles request1.\n"; //Here to illustrate the changes in state
     cout << "   Today is a weekday, you need to wake up at 7:00am and go to sleep whenever.  Tomorrow is the weekend.\n";
     cout << "Weekday wants to change the state of the context.\n";  //Here to illustrate the changes in state
+
+    this->_context->transitionTo(new Weekend);
 }
 
 //Function that starts everything and would process the state requests
