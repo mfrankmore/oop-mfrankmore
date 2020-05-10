@@ -1,4 +1,4 @@
-from .container import Container
+from container import Container
 
 class Package(Container):
     DEFAULT_WEIGHT : float = 0.0
@@ -16,6 +16,10 @@ class Package(Container):
     @property
     def contents(self) -> str:
         return self._contents
+
+    @contents.setter
+    def contents(self, value : str) -> None:
+        self._contents = value
 
     
 
