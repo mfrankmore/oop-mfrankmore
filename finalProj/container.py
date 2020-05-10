@@ -1,4 +1,3 @@
-#print(self.containerTypes["Small Box"][0])
 class Container:
     containerTypes = {"Small Box" : [4, 4, 4], "Medium Box" : [8,4,4], "Large Box" : [8,8,4]}
     DEFAULT_CONTAINER_TYPE : str = "Medium Box"

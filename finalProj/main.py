@@ -15,6 +15,7 @@ def shipInfo(orig_func):
 def makePackage(pkg):
     print(f"Package Information: \n\t{pkg.dimensions(pkg.containerType)} \n\tWeight: {pkg.weight}\n\tContents: {pkg.contents}\n\n")
 
+#Test making packages and running the decorated function
 testOrder = Package(12, "GPU", "Medium Box")
 makePackage(testOrder)
 testOrder2 = Package(11, "Ice Cream", "Small Box")
