@@ -1,0 +1,20 @@
+package:
+    weight
+    size
+    content
+
+        Container (Multiple options):
+            max weight
+            max size
+
+
+        label:
+            origin
+            destination
+            weight
+
+Decorator Function
+    Ship
+        chooses container ( getContainer() )
+        makes the package ( makePackage() )
+        Outputs status of container
