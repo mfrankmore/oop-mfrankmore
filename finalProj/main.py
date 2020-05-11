@@ -13,7 +13,25 @@ def shipInfo(orig_func):
 #Outputs details of the package being created
 @shipInfo
 def makePackage(pkg):
-    print(f"Package Information: \n\t{pkg.dimensions(pkg.containerType)} \n\tWeight: {pkg.weight}\n\tContents: {pkg.contents}\n\n")
+    print(f"Package Information: \n\t{pkg.dimensions(pkg.containerType)}\n\tWeight: {pkg.weight}\n\tContents: {pkg.contents}\n\tPrice: ${calcCost(pkg)}\n\n")
+
+def calcCost(pkg) -> float:
+    containerCharge : float = 0.0
+    price : float = 0.0
+    pricePerLb : float = 1.5
+    
+    if pkg.containerType == "Small Box":
+        containerCharge = 2.5
+    elif pkg.containerType == "Medium Box":
+        containerCharge = 5.0
+    elif pkg.containerType == "Large Box":
+        containerCharge = 7.5
+    else:
+        raise ValueError(f"Container is of the wrong type: {pkg.containerType}")
+
+    price = (pkg.weight * pricePerLb) + containerCharge
+
+    return price
 
 #Test making packages and running the decorated function
 testOrder = Package(12, "GPU", "Medium Box")
