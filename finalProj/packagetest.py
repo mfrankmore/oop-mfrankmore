@@ -17,4 +17,9 @@ class PackageTest(unittest.TestCase):
         self.assertEqual(pkg.containerType, "Small Box")
         pkg.weight = 15
         self.assertEqual(pkg.weight, 15)
-        
+        pkg.contents = "Motherboard"
+        self.assertEqual(pkg.contents, "Motherboard")
+        pkg.containerType = "Large Box"
+        self.assertEqual(pkg.containerType, "Large Box")
+
+
