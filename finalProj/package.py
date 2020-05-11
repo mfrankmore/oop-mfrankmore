@@ -15,6 +15,13 @@ class Package(Container):
     def weight(self) -> float:
         return self._weight
 
+    @weight.setter
+    def weight(self, value : float) -> None:
+        if value >= 0:
+            self._weight = value
+        else:
+            raise ValueError(f"Weight must be a non-negative number")
+
     @property
     def contents(self) -> str:
         return self._contents
