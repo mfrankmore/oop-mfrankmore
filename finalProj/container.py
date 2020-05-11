@@ -16,8 +16,8 @@ class Container:
         if conType not in boxes:
             raise ValueError(f"Invalid Container Type: {conType}")
         else:
-            self.containerType = conType
+            self._containerType = conType
 
     #Prints the dimensions of the container
     def dimensions(self, containerType) -> str:
-        return f"Dimensions: {self.containerTypes[containerType][0]} x {self.containerTypes[containerType][1]} x {self.containerTypes[containerType][2]}."
+        return f"Dimensions: {self.containerTypes.get(containerType)[0]} x {self.containerTypes.get(containerType)[1]} x {self.containerTypes.get(containerType)[2]}."
